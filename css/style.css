@@ -288,7 +288,7 @@ canvas {
     width: 45px;
 }
 
-.social-image-backgnd {
+.social-image-background {
     margin: 0 5px;
     padding: 12px 3px;
     background-color: #7377BF;
@@ -348,20 +348,23 @@ svg {
 
 input::placeholder {
     padding-left: 10px;
-    font-family: copperplate;
+    font-size: 14px;
 }
 
 textarea::placeholder {
     padding: 10px 10px;
-    font-family: copperplate;
+    font-size: 14px;
 }
 
 
-/*.awesomplete {
-    display: block;
-}*/
-
-
+.button-send{
+    width:100%;
+    height: 8vh;
+    margin: 15px 0;
+    background-color: #7377BF;
+    border-radius: 7px;
+    
+}
 /*settings*/
 
 .toggle1, .toggle2 {
@@ -372,40 +375,42 @@ textarea::placeholder {
 
 .switch-light {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 10px 0;
+    align-items: center;
+    margin: 10px 10px;
 }
 
 .toggle-switch {
-    width: 40%;
+    width: 20%;
 }
 
 .toggle2 .toggle-switch {
-    margin-left: 35px;
+    margin-left: 28px;
 }
+
+
+.setting-boutton{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    
+}
+
 
 .button-save {
-    width: 100%;
+    width:45%;
     height: 8vh;
-    margin: 15px 0;
+    margin: 15px 8px;
     background-color: #7377BF;
-    color: black;
     border-radius: 7px;
+    
 }
-
-.settings-button {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 .button-cancel {
-    width: 100%;
+    width: 45%;
     height: 8vh;
-    margin: 15px 0;
-    margin-left: 10px;
-    background-color: #C6C7C6;
-    color: black;
+    margin: 15px 8px;
+    background-color: #999b99;
     border-radius: 7px;
 }
 
@@ -424,7 +429,7 @@ textarea::placeholder {
     }
 
     .navigation {
-        grid-area: "navigation";
+        grid-area: navigation;
         justify-content: flex-start;
         flex-direction: column;
         height: auto;
@@ -432,21 +437,20 @@ textarea::placeholder {
         background: #5f618f;
         
     }
+    
+    .nav-icon {
+        margin: 15px 0;
+    }
 
     .main-grid{
         grid-area:main;
     }
      
-    section.traffic {
+    .traffic {
         border-bottom: none;
     }
 
-    .nav-icon {
-        margin: 15px 0;
-    }
-
-    
-
+   
     .traffic-header {
         display: flex;
     }
@@ -502,8 +506,9 @@ textarea::placeholder {
 
     .members-container {
         display: flex;
-        align-items: center;
         justify-content: start;
+        align-items: center;
+        
     }
 
     .members-text, .recent-text {
@@ -522,6 +527,7 @@ textarea::placeholder {
         margin-left: auto;
         font-size: 1.5rem;
     }
+
     .widget-container-half, .mobile-chart{
         margin: 0 0 15px 0;
         padding: 20px 5px;
@@ -561,28 +567,12 @@ textarea::placeholder {
     .new-members, .recent-activity {
         border-bottom: none;
     }
-
-    .message {
-        padding-right: 10px;
-        border-top: solid 1px #C6C7C6;
-        border-bottom: none;
-        border-right: solid 1px #C6C7C6;
-    }
-
-    .settings {
-        border-top: solid 1px #C6C7C6;
-        padding: 0 10px;
-        border-bottom: none;
-    }
-
-    .settings-button {
-        margin-top: 3px;
-    }
-
+    
     .members-container {
         padding: 0 10px 10px 10px;
     }
-
+    
+    
     .new-members {
         margin-top: 0;
         border-right: solid 1px #C6C7C6;;
@@ -596,6 +586,19 @@ textarea::placeholder {
     .recent-activity h3 {
         padding-left: 5px;
     }
+    .message {
+        padding-right: 10px;
+        border-top: solid 1px #C6C7C6;
+        border-bottom: none;
+        border-right: solid 1px #C6C7C6;
+    }
+
+    .settings {
+        border-top: solid 1px #C6C7C6;
+        padding: 0 10px;
+        border-bottom: none;
+    }
+
     .message, .settings {
         margin-top: 0;
     }
