@@ -586,20 +586,20 @@ textarea::placeholder {
     .recent-activity h3 {
         padding-left: 5px;
     }
+
     .message {
         padding-right: 10px;
         border-top: solid 1px #C6C7C6;
         border-bottom: none;
         border-right: solid 1px #C6C7C6;
+        margin-top: 0;
     }
 
     .settings {
         border-top: solid 1px #C6C7C6;
         padding: 0 10px;
         border-bottom: none;
-    }
-
-    .message, .settings {
         margin-top: 0;
     }
+
 }
