@@ -3,13 +3,12 @@
 
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp Dashboard</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
-       <link rel="stylesheet" href="css/toggle-switch.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <link rel="stylesheet" href="css/style.css">
   
     </head>
@@ -259,33 +258,34 @@
                 </form>
             </section>
 
+
             <section class="settings" id="settings">
                 <h3>Settings</h3>
-
+                
                 <!--Toggle Buttons-->
-            <div class="toggle1">
-                <label class="switch-light switch-candy" onclick="">
-                    <input type="checkbox" id="tog1">
-                    <strong>Send Email Notifications</strong>
-                    <span class="toggle-switch">
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                    </span>
-                </label>
-            </div>
+                <div class="toggle1">
+                    <p>Send Email Notifications</p>
+                    <label class="switch-light switch-ios switch-a" onclick="">
+                        <input type="checkbox" id="tog1">
+                        <span class="toggle-switch">
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
+                </div>
 
-            <div class="toggle2">
-                <label class="switch-light switch-candy" onclick="">
-                    <input type="checkbox" id="tog2">
-                    <strong>Set Profile to Public</strong>
-                    <span class="toggle-switch">
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                    </span>
-                </label>
-            </div>
+                <div class="toggle2">
+                    <p>Set Profile to Public</p>
+                    <label class="switch-light switch-ios switch-b" onclick="">
+                        <input type="checkbox" id="tog2">
+                        <span class="toggle-switch">
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                        </span>
+                    </label>
+                </div>
 
                 <select class="form-field" id="timezone">
                     <option disabled selected>Select a Timezone</option>

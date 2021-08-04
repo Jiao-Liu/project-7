@@ -68,7 +68,8 @@ ul li {
 /* header */
 header {
     display: flex;
-    width: 100vw;
+    padding-right: 5%;
+    width:100vw;
     justify-content: space-between;
     grid-area: header;
     height: 55px;
@@ -367,26 +368,27 @@ textarea::placeholder {
 }
 /*settings*/
 
-.toggle1, .toggle2 {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
+.settings h3{
+    padding:15px 0;
 }
+
+.toggle1, .toggle2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: left;
+    align-content: center;
+   
+}
+
 
 .switch-light {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 10px;
+    justify-self: center;
+    margin:0 15px;
+    width:40%;
 }
 
-.toggle-switch {
-    width: 20%;
-}
 
-.toggle2 .toggle-switch {
-    margin-left: 28px;
-}
 
 
 .setting-boutton{
