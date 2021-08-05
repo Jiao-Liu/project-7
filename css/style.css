@@ -231,12 +231,15 @@ main {
 
 
 .traffic-header {
-    display: flex;
+    
+    display:grid;
+    justify-content: flex-start;
+    width:90%;
 }
 
 .traffic-nav {
     margin-left: auto;
-    padding: 10px 20px 0 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -244,8 +247,10 @@ main {
     font-size: 12px;
     width: 70px;
     padding: 15px 10px;
-    align-items: center;
+    justify-self: start;
 }   
+
+
 .hourly {
     background-color:#bfa;
     color: black;
@@ -263,7 +268,7 @@ canvas {
 .widget-container-full, .widget-container-half, .mobile-chart{
     margin: 0 0 15px 0;
     padding: 20px 5px;
-    width: 90vw;
+    width: 85vw;
 }
 
 
@@ -275,6 +280,7 @@ canvas {
 /* social stats*/
 .social-container {
     display: flex;
+    width:95%;
     border:  1px solid #afaeb1;
     border-radius: 5px;
     background-color: #E6E6E6;
@@ -333,6 +339,7 @@ svg {
 
 .form-field {
     height: 3em;
+    
 }
 
 .form-area {
@@ -340,7 +347,7 @@ svg {
 }
 
 .form-field, .form-area {
-    width: 100%;
+    width:95%;
     margin-top: 1em;
     border: 1px solid #afaeb1;
     border-radius: 5px;
@@ -359,7 +366,7 @@ textarea::placeholder {
 
 
 .button-send{
-    width:100%;
+    width:95%;
     height: 8vh;
     margin: 15px 0;
     background-color: #7377BF;
@@ -383,7 +390,7 @@ textarea::placeholder {
 
 
 .switch-light {
-    justify-self: center;
+    justify-self: right;
     margin:0 15px;
     width:40%;
 }
@@ -403,7 +410,7 @@ textarea::placeholder {
 .button-save {
     width:45%;
     height: 8vh;
-    margin: 15px 8px;
+    margin: 15px 5px;
     background-color: #7377BF;
     border-radius: 7px;
     
@@ -411,7 +418,7 @@ textarea::placeholder {
 .button-cancel {
     width: 45%;
     height: 8vh;
-    margin: 15px 8px;
+    margin: 15px 5px;
     background-color: #999b99;
     border-radius: 7px;
 }
@@ -474,6 +481,7 @@ textarea::placeholder {
 
     .doughnut {
         grid-column: 2 / span 1;
+        width:90%;
     }
 
     .social-stats {
@@ -503,13 +511,14 @@ textarea::placeholder {
 
     .social-container {
         width: 30%;
-        padding-right: 7px;
+        margin:5px 2px;
     }
 
     .members-container {
         display: flex;
         justify-content: start;
         align-items: center;
+        
         
     }
 
