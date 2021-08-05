@@ -545,6 +545,12 @@ textarea::placeholder {
         width: 42vw;
     }
 
+    .switch-light {
+        justify-self: left;
+        
+       
+    }
+
     
     .social-stats
     .new-memebers,
@@ -611,6 +617,11 @@ textarea::placeholder {
         padding: 0 10px;
         border-bottom: none;
         margin-top: 0;
+    }
+    .switch-light {
+        justify-self: left;
+        
+       
     }
 
 }
